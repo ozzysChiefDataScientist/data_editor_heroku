@@ -3,7 +3,7 @@ import React, { PureComponent} from "react";
 import FileResults from "./FileResults";
 import Header from "./Header";
 //import CSVReader from 'react-csv-reader';
-//import { CSVLink } from "react-csv";
+import { CSVLink } from "react-csv";
 
 const initial_state = {
   columns: [],
@@ -141,10 +141,11 @@ export default class App extends PureComponent {
         <Header />
          <div><button onClick={this.handleButton}>Add Column</button></div>
          <FileResults data={this.state.data} columns={this.state.columns} updateData ={(event) => this.dataUpdater(event)}/>
+          <button><CSVLink data={this.state.data} headers={this.state.header}>Download me</CSVLink></button>
       </div>
     );
   }
 }
 //<CSVReader onFileLoaded={this.handleForce} />
-// <button><CSVLink data={this.state.data} headers={this.state.header}>Download me</CSVLink></button>
+//
 // <BarChartByCategory data={this.state.data} />
