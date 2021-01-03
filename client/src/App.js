@@ -1,5 +1,5 @@
 import React, { PureComponent} from "react";
-//import BarChartByCategory from "./BarChartByCategory";
+import BarChartByCategory from "./BarChartByCategory";
 import FileResults from "./FileResults";
 import Header from "./Header";
 //import CSVReader from 'react-csv-reader';
@@ -142,10 +142,11 @@ export default class App extends PureComponent {
          <div><button onClick={this.handleButton}>Add Column</button></div>
          <FileResults data={this.state.data} columns={this.state.columns} updateData ={(event) => this.dataUpdater(event)}/>
           <button><CSVLink data={this.state.data} headers={this.state.header}>Download me</CSVLink></button>
+          <BarChartByCategory data={this.state.data} />
       </div>
     );
   }
 }
 //<CSVReader onFileLoaded={this.handleForce} />
 //
-// <BarChartByCategory data={this.state.data} />
+//
