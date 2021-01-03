@@ -140,11 +140,12 @@ export default class App extends PureComponent {
       <div>
         <Header />
          <div><button onClick={this.handleButton}>Add Column</button></div>
+         <FileResults data={this.state.data} columns={this.state.columns} updateData ={(event) => this.dataUpdater(event)}/>
       </div>
     );
   }
 }
 //<CSVReader onFileLoaded={this.handleForce} />
-// <FileResults data={this.state.data} columns={this.state.columns} updateData ={(event) => this.dataUpdater(event)}/>
+//
 // <button><CSVLink data={this.state.data} headers={this.state.header}>Download me</CSVLink></button>
 // <BarChartByCategory data={this.state.data} />
