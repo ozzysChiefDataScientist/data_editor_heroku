@@ -1,6 +1,6 @@
 import React, { PureComponent} from "react";
 //import BarChartByCategory from "./BarChartByCategory";
-//import FileResults from "./FileResults";
+import FileResults from "./FileResults";
 import Header from "./Header";
 //import CSVReader from 'react-csv-reader';
 //import { CSVLink } from "react-csv";
@@ -146,6 +146,5 @@ export default class App extends PureComponent {
   }
 }
 //<CSVReader onFileLoaded={this.handleForce} />
-//
 // <button><CSVLink data={this.state.data} headers={this.state.header}>Download me</CSVLink></button>
 // <BarChartByCategory data={this.state.data} />
