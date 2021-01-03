@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import TableCell from "./TableCell";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class FileResults extends PureComponent {
   static propTypes = {
@@ -25,8 +26,8 @@ export default class FileResults extends PureComponent {
 
     return (
       <div>
-      <table class="table">
-      <thead>
+      <table class="table table-striped">
+      <thead class="thead-light">
       <tr>
          {
               cols_to_render.map(headerTitle =>(
