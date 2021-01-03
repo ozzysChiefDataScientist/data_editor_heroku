@@ -1,7 +1,7 @@
 import React, { PureComponent} from "react";
 //import BarChartByCategory from "./BarChartByCategory";
 //import FileResults from "./FileResults";
-//import Header from "./Header";
+import Header from "./Header";
 //import CSVReader from 'react-csv-reader';
 //import { CSVLink } from "react-csv";
 
